@@ -1,0 +1,303 @@
+.header_top {
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
+    display: flex
+}
+
+.header_top .header_top_left {
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    display: flex;
+    align-items: center
+}
+.header_top .header_top_right {
+    flex: 1;
+    min-width: 450px;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative
+}
+
+.appList_icon{
+    width: 60px;
+    background-color: #ff6a00;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 1px solid #e6e6e6
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+    min-width: 40px
+}
+
+.logo .logo_text{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #545c64;
+    font-family: Microsoft JhengHei UI Bold, Microsoft JhengHei UI, Microsoft JhengHei UI, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
+}
+
+.bus{
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.bus img{
+    height: 16px;
+    width: 16px;
+}
+
+.bus .turnImg{
+    margin-left: 7px;
+}
+
+.usual[data-v-7f75d23b] {
+    display: inline-flex;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7c8791;
+}
+
+.briefcase[data-v-e5427a76] {
+    width: 38px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #7c8791
+}
+
+.briefcase .redPoint[data-v-e5427a76] {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    top: 14px;
+    right: 2px;
+    cursor: default !important
+}
+
+.language_turn[data-v-549af23a] {
+    display: inline-flex;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7c8791
+}
+
+.language_turn .language[data-v-549af23a] {
+    padding-left: 11px;
+    padding-right: 12px;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    font-family: Source Han Sans SC Normal;
+    color: #7c8791
+}
+
+.language_turn .language[data-v-549af23a]:hover {
+    color: #ff6a00
+}
+
+.language_turn .language .language_text[data-v-549af23a] {
+    margin-left: 4px
+}
+
+[data-v-e70f8582] .vxp-dropdown__item {
+    font-family: Source Han Sans SC Normal !important
+}
+
+[data-v-e70f8582] .vxp-dropdown__item--selected {
+    color: #ff6a00 !important
+}
+
+.vxp-dropdown__trigger {
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+}
+
+
+/* 搜索框样式 */
+
+.np-autocomplete {
+    --np-input-text-color: var(--np-text-color-regular);
+    --np-input-border: var(--np-border);
+    --np-input-hover-border: var(--np-border-color-hover);
+    --np-input-focus-border: var(--np-color-primary);
+    --np-input-transparent-border: 0 0 0 1px transparent inset;
+    --np-input-border-color: var(--np-border-color);
+    --np-input-border-radius: var(--np-border-radius-base);
+    --np-input-bg-color: var(--np-fill-color-blank);
+    --np-input-icon-color: var(--np-text-color-placeholder);
+    --np-input-placeholder-color: var(--np-text-color-placeholder);
+    --np-input-hover-border-color: var(--np-border-color-hover);
+    --np-input-clear-hover-color: var(--np-text-color-secondary);
+    --np-input-focus-border-color: var(--np-color-primary);
+    --np-input-width: 100%;
+    display: inline-block;
+    position: relative;
+    width: var(--np-input-width);
+}
+
+.searchPage {
+    margin-right: 29px;
+    width: 226px
+}
+
+.np-input {
+    --np-input-text-color: var(--np-text-color-regular);
+    --np-input-border: var(--np-border);
+    --np-input-hover-border: var(--np-border-color-hover);
+    --np-input-focus-border: var(--np-color-primary);
+    --np-input-transparent-border: 0 0 0 1px transparent inset;
+    --np-input-border-color: var(--np-border-color);
+    --np-input-border-radius: var(--np-border-radius-base);
+    --np-input-bg-color: var(--np-fill-color-blank);
+    --np-input-icon-color: var(--np-text-color-placeholder);
+    --np-input-placeholder-color: var(--np-text-color-placeholder);
+    --np-input-hover-border-color: var(--np-border-color-hover);
+    --np-input-clear-hover-color: var(--np-text-color-secondary);
+    --np-input-focus-border-color: var(--np-color-primary);
+    --np-input-width: 100%;
+    --np-input-height: var(--np-component-size);
+    box-sizing: border-box;
+    display: inline-flex;
+    font-size: var(--np-font-size-base);
+    line-height: var(--np-input-height);
+    position: relative;
+    vertical-align: middle;
+    width: var(--np-input-width);
+}
+
+.np-input::-webkit-scrollbar-corner, .np-input::-webkit-scrollbar-track {
+    background: var(--np-fill-color-blank);
+}
+
+.np-cascader {
+    --np-cascader-menu-text-color: var(--np-text-color-regular);
+    --np-cascader-menu-selected-text-color: var(--np-color-primary);
+    --np-cascader-menu-fill: var(--np-bg-color-overlay);
+    --np-cascader-menu-font-size: var(--np-font-size-base);
+    --np-cascader-menu-radius: var(--np-border-radius-base);
+    --np-cascader-menu-border: solid 1px var(--np-border-color-light);
+    --np-cascader-menu-shadow: var(--np-box-shadow-light);
+    --np-cascader-node-background-hover: var(--np-fill-color-light);
+    --np-cascader-node-color-disabled: var(--np-text-color-placeholder);
+    --np-cascader-color-empty: var(--np-text-color-placeholder);
+    --np-cascader-tag-background: var(--np-fill-color);
+    display: inline-block;
+    font-size: var(--np-font-size-base);
+    line-height: 32px;
+    outline: none;
+    position: relative;
+    vertical-align: middle
+}
+
+.np-cascader:not(.is-disabled):hover .np-input__wrapper {
+    box-shadow: 0 0 0 1px var(--np-input-hover-border-color) inset;
+    cursor: pointer
+}
+
+
+.np-input__wrapper {
+    position: relative; /* 使内部绝对定位元素相对于这个容器定位 */
+}
+
+.search-icon {
+    position: absolute; /* 绝对定位 */
+    top: 50%; /* 垂直居中 */
+    right: 10px; /* 距离左边的距离，根据需要调整 */
+    transform: translateY(-50%); /* 垂直居中 */
+    pointer-events: none; /* 防止图标捕捉鼠标事件 */
+}
+
+.np-input__inner {
+    padding-left: 30px !important;/* 给输入框留出空间，避免文字与图标重叠 */
+}
+
+
+
+.main1{
+    padding: 20px 0;
+    display: none;
+    padding-left: 2000px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.app-icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.app-name {
+    font-size: 14px;
+}

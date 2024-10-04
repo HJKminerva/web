@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兴发工业 - 仪表板</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="header-left">
+                <button id="menuButton" class="icon-button">☰</button>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-placeholder-Ue5Hy5Ue5Hy5.svg" alt="Logo" class="logo">
+                <span class="company-name">兴发工业</span>
+            </div>
+            <div class="header-right">
+                <input type="search" placeholder="功能搜索" class="search-input">
+                <button class="icon-button">🔍</button>
+                <button class="icon-button">🔔</button>
+                <button class="icon-button">❓</button>
+                <button class="icon-button">👤</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>平台应用</h2>
+                <div class="app-grid">
+                    <div class="app-item">
+                        <span class="app-icon">⚡</span>
+                        <span class="app-name">智慧能管</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">☁️</span>
+                        <span class="app-name">工厂云</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🏢</span>
+                        <span class="app-name">智慧园区</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🌐</span>
+                        <span class="app-name">物联网</span>
+                    </div>
+                    <div class="app-item">
+                        <span class="app-icon">🔧</span>
+                        <span class="app-name">设备管理</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>第三方应用</h2>
+                <p class="no-data">无数据</p>
+            </div>
+
+            <div class="card">
+                <h2>新闻中心</h2>
+                <div id="calendar"></div>
+            </div>
+
+            <div class="card">
+                <h2>公告提醒</h2>
+                <p class="no-data">无数据</p>
+            </div>
+
+            <div class="card">
+                <h2>信息分享</h2>
+                <p class="no-data">无数据</p>
+            </div>
+
+            <div class="card">
+                <h2>电子邮件</h2>
+                <p class="no-data">无数据</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
