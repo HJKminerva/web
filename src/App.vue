@@ -5,15 +5,26 @@ import { RouterLink, RouterView, useRouter} from 'vue-router'
 </script>
 
 <template>
-
-  <h1>
+  <!-- <h1>
     <nav>
-    <RouterLink to="/">Home</RouterLink>|
-    <RouterLink to="/about">About</RouterLink>|
-    <RouterLink to="/login">Login</RouterLink>
-  </nav>
-</h1>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/shortcuts">快捷键管理</router-link> 
+    </nav>
+  </h1> -->
 
   <RouterView />
 </template>
+
+<style>
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+</style>
+
 
