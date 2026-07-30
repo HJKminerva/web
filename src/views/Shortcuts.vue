@@ -1,5 +1,5 @@
 <template>
-    <div class="shortcuts-container">
+    <div class="shortcut-container">
       <header class="header">
         <h1>⌨️ 快捷键管理器</h1>
         <p class="subtitle">输入缩写后按下 【空格键】，即可在系统任意位置自动替换为固定文本。</p>
@@ -42,7 +42,7 @@
         </section>
   
         <section class="list-section">
-          <h2>📋 现有映射列表 (共 {{ snippets.length }} 条)</h2>
+          <h2>📋 现有映射列表 (共 {{ shortcut.length }} 条)</h2>
           <div class="table-wrapper">
             <table class="snippet-table">
               <thead>
@@ -53,7 +53,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="item in snippets" :key="item.id">
+                <tr v-for="item in shortcut" :key="item.id">
                   <td class="td-shortcut"><span class="badge">{{ item.shortcut }}</span></td>
                   <td class="td-content"><code>{{ item.content }}</code></td>
                   <td>
@@ -63,7 +63,7 @@
                     </div>
                   </td>
                 </tr>
-                <tr v-if="snippets.length === 0">
+                <tr v-if="shortcut.length === 0">
                   <td colspan="3" class="empty-tip">暂无数据，请在左侧添加你的第一个快捷键！</td>
                 </tr>
               </tbody>
@@ -86,10 +86,10 @@
   }
   
   // 后端 FastAPI 服务的本地运行地址
-  const API_BASE_URL = 'http://127.0.0.1:8000/api/snippets'
-  
+  // const API_BASE_URL = 'http://127.0.0.1:8000/api/shortcut'
+  const API_BASE_URL = 'http://localhost:8000/api/shortcut'
   // 状态定义
-  const snippets = ref<Snippet[]>([])
+  const shortcut = ref<Snippet[]>([])
   const isEditing = ref(false)
   const form = reactive<Snippet>({
     shortcut: '',
@@ -100,7 +100,7 @@
   const fetchList = async () => {
     try {
       const response = await axios.get<Snippet[]>(API_BASE_URL)
-      snippets.value = response.data
+      shortcut.value = response.data
     } catch (error) {
       console.error('获取列表失败:', error)
       alert('无法连接到后端 API，请检查 FastAPI 服务是否启动！')
@@ -166,7 +166,7 @@
   </script>
   
   <style scoped>
-  .shortcuts-container {
+  .shortcut-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
